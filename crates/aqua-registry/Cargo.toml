@@ -30,7 +30,7 @@ rkyv = { version = "0.8", features = ["unaligned"] }
 strum = { version = "0.28", features = ["derive"] }
 
 # Template parsing and evaluation
-expr-lang = "1"
+expr-lang = "2"
 heck = "0.5"
 versions = { version = "7", features = ["serde"] }
 
