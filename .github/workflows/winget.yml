@@ -7,7 +7,7 @@ jobs:
   publish:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
           repository: jdx/winget-pkgs
           token: ${{ secrets.MISE_GH_TOKEN }}
@@ -17,7 +17,7 @@ jobs:
       - run: git remote add microsoft https://github.com/microsoft/winget-pkgs
       - run: git pull --rebase microsoft master
       - run: git push -f origin master
-      - uses: vedantmgoyal9/winget-releaser@7bd472be23763def6e16bd06cc8b1cdfab0e2fd5 # main
+      - uses: vedantmgoyal9/winget-releaser@a8fff44b123f115ce4c21543edf8b677376fc7e0 # main
         with:
           identifier: jdx.mise
           max-versions-to-keep: 5
